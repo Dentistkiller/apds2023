@@ -1,0 +1,48 @@
+GET http://localhost:3000/api HTTP/1.1
+###
+GET http://localhost:3000/test HTTP/1.1
+###
+GET https://localhost:3000/api HTTP/1.1
+###
+GET https://localhost:3000/api/cars HTTP/1.1
+###
+POST https://localhost:3000/api/cars HTTP/1.1
+content-Type: application/json
+
+{
+    "id": "4",
+    "name": "Pear"
+}
+###
+DELETE https://localhost:3000/api/cars/63451ab92018bb0cbc8b04cf HTTP/1.1
+content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3Q5IiwidXNlcmlkIjoiNjM0NTFhMDQyMDE4YmIwY2JjOGIwNGNhIiwiaWF0IjoxNjY1NDczMDY2LCJleHAiOjE2NjU0NzY2NjZ9.FpGxz2CC2koE4PopXTG-qk_Kz93EjLBFBJL0qoWtu60
+
+
+###
+POST https://localhost:3000/api/users/signup HTTP/1.1
+content-Type: application/json
+
+{
+    "username": "test9",
+    "password": "youwillneverguess"
+}
+###
+POST https://localhost:3000/api/users/login HTTP/1.1
+content-Type: application/json
+
+{
+    "username": "test9",
+    "password": "youwillneverguess"
+}
+###
+POST https://localhost:3000/api/cars HTTP/1.1
+content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3Q5IiwidXNlcmlkIjoiNjUwMWQ4ZWEwZmQ4YzgwNzBiNTcwNzEwIiwiaWF0IjoxNjk0NjE5OTU5LCJleHAiOjE2OTQ2MjM1NTl9.UBszOnGGtJfK7F49MkVSXPKPGncMbFJ7JY8hJ_n434k
+
+{
+    "id": "50",
+    "name": "BMW M2"
+}
+###
+
